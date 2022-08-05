@@ -1,0 +1,21 @@
+.game-board {
+  display: grid;
+   /*three measures (ex: 200px) === three columns*/
+  grid-template-columns: 10vw 10vw 10vw;
+  grid-gap: 0;
+  margin-left: 35vw;
+}
+
+.new-game-button {
+  border: #dc3545 1px solid;
+  padding: 10px;
+  border-radius: 3%;
+  background-color: transparent;
+  color: #dc3545;
+}
+
+.new-game-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+

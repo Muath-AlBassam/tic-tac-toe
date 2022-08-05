@@ -1,0 +1,18 @@
+<h1 style="margin-top: 7vh;">Current Player: {{ player }}</h1>
+
+<br>
+
+<button class="btn btn-lg btn-outline-danger" (click)="newGame()">Start a new game</button>
+
+<br>
+<br>
+
+<h2 *ngIf="!winner && filledBoxes < 9" style="color: #130134;">d</h2>
+<h2 *ngIf="winner" >Player {{ winner }} won the game!</h2>
+<h2 *ngIf="filledBoxes === 9 && !winner">Tie</h2>
+
+<br>
+
+<div class="game-board">
+  <app-square *ngFor="let square of squares; let i = index" [value]="square" (click)="makeMove(i)"></app-square>
+</div>

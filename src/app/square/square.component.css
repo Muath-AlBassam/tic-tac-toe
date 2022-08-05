@@ -1,0 +1,22 @@
+.square-button {
+  border: 4px #130134 solid;
+  height: 10vw;
+  width: 10vw;
+  font-size: 13vh;
+}
+
+.regular-button {
+  background-color: #a651db;
+}
+
+.regular-button:hover {
+  opacity: 0.8;
+}
+
+.x-button {
+  background-color: #16b48f;
+}
+
+.o-button {
+  background-color: #1c8bdb;
+}
